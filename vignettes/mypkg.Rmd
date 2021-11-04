@@ -1,0 +1,47 @@
+---
+title: "mypkg"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mypkg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mypkg)
+```
+
+
+# Introduction
+
+This is my personal package. It contains some handy functions that I find useful
+for my projects.
+
+# Colours
+
+Sometimes you want to generate shades of a colour. The `make_shades()` function
+makes this easy!
+
+```{r} 
+shades <- make_shades("goldenrod", 5)
+```
+
+If you want to see what the shades look like you can plot them using
+`plot_colours()`.
+
+```{r} 
+plot_colours(shades)
+```
+
+This function is also useful for viewing any other palettes.
+
+```{r} 
+plot_colours(rainbow(5))
+```
