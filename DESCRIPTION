@@ -18,3 +18,5 @@ Imports:
     rlang,
     ggplot2
 VignetteBuilder: knitr
+URL: https://github.com/simoncmo/mypkg
+BugReports: https://github.com/simoncmo/mypkg/issues
